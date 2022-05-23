@@ -1,4 +1,6 @@
 import "product.dart";
+import "package:mocktail/mocktail.dart";
+
 
 class Store {
   final _inventory = Map<Symbol, int>();
@@ -11,3 +13,5 @@ class Store {
     return _inventory[product]! >= amount;
   }
 }
+
+class MockStore extends Mock implements Store {}
