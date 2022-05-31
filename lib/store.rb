@@ -15,7 +15,7 @@ class Store
     @inventory[product]
   end
 
-  def hasEnough(product, amount)
+  def enough?(product, amount)
     @inventory[product] >= amount
   end
 end
